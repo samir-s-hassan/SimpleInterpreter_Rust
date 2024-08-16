@@ -163,7 +163,7 @@ pub fn lex(input: &str) -> Tokens {
         45 => TokenKind::Dash,
         44 => TokenKind::Comma,
         34 => TokenKind::Quote,
-        x => TokenKind::Other,
+        _x => TokenKind::Other,
     };
     //check if fn
     if c == b'f' {

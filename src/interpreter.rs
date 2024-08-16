@@ -220,7 +220,7 @@ impl Interpreter {
                 // we check the current frame on the stack for the identifier.
                 // if there is a frame there, we retrieve the value associated with the identifier.
                 if let Some(frame) = self.stack.last() {
-                    if let Some(val) = frame.get(&identifier) {
+                    if let Some(_val) = frame.get(&identifier) {
                         let new_val = frame.get(&identifier).unwrap();
                         println!(
                             "Identifier '{}' was found with the value: {:?}",
